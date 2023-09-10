@@ -14,29 +14,14 @@ const burgerBtn = document.querySelector('#burger-btn');
 const planetBtn = document.querySelector('#planet-btn');
 
 
-
-
-
-
-
-
 const PLANET_API = 'https://planets-api.vercel.app/api/v1/planets';
    
 for (let i = 0; i <  planetLinks.length; i++) {
     planetLinks[i].addEventListener('click', () => {
         selectPlanet(planetLinks[i].textContent);
 
-        // for (let j = 0; j < planetLinks.length; j++) {
-        //     planetLinks[j].classList.add('planetLine');
-        // }
-        // planetLinks[i].classList.remove('planetLine');
-
-
     });
 }
-
-
-
 
 
 
@@ -72,6 +57,7 @@ const selectPlanet = async (planet = 'Mercury') => {
         infoP.textContent = data.geology.content;
         planetImg.src = data.images.planet;
         planetImgAdd.src = data.images.geology;
+        planetImgAdd.style.display = 'block';
 
        
     });
