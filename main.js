@@ -19,7 +19,6 @@ const PLANET_API = 'https://planets-api.vercel.app/api/v1/planets';
 for (let i = 0; i <  planetLinks.length; i++) {
     planetLinks[i].addEventListener('click', () => {
         selectPlanet(planetLinks[i].textContent);
-
     });
 }
 
@@ -43,23 +42,19 @@ const selectPlanet = async (planet = 'Mercury') => {
         infoP.textContent = data.overview.content;
         planetImg.src = data.images.planet;
         planetImgAdd.style.display = 'none';
-
     });
 
     internalSec.addEventListener('click', () => {
         infoP.textContent = data.structure.content;
         planetImg.src = data.images.internal;
         planetImgAdd.style.display = 'none';
-
     });
 
     geologyThird.addEventListener('click', () => {
         infoP.textContent = data.geology.content;
         planetImg.src = data.images.planet;
         planetImgAdd.src = data.images.geology;
-        planetImgAdd.style.display = 'block';
-
-       
+        planetImgAdd.style.display = 'block';  
     });
 
 };
@@ -70,7 +65,6 @@ selectPlanet();
 burgerBtn.addEventListener('click', () => {
     planetBtn.classList.toggle('active');
     burgerBtn.classList.toggle('active');
-
 });
 
 
