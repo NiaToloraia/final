@@ -49,6 +49,7 @@ const selectPlanet = async (planet = 'Mercury') => {
     rotationN.textContent = data.rotation;
     revolutionN.textContent = data.revolution;
     radiusN.textContent = data.radius;
+    temperatureN .textContent = data.temperature;
    
 
  
@@ -83,7 +84,7 @@ selectPlanet();
 
 burgerBtn.addEventListener('click', () => {
     planetBtn.classList.toggle('active');
-    // burgerBtn.classList.toggle('active');
+    burgerBtn.classList.toggle('active');
 
 
 });

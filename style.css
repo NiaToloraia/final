@@ -75,14 +75,18 @@ header h1 {
     width: 100%;
 }
 
+#burger-btn.active {
+    opacity: 0.5;
+}
+
 #planet-btn {
     display: none;
 
 }
 
 #planet-btn.active {
-    margin-top: 75px;
-    padding: 60px;
+    margin-top: 70px;
+    padding: 3rem;
     position: absolute;
     display: block;
     height: 919px;
@@ -102,24 +106,19 @@ header h1 {
 }
 
 
-.MSepline {
-    margin-left: 24px;
-    margin-right: 24px;
+.MSline {
     background-color: #fff;
     opacity: .2;
+
 }
 
 .flips {
-    margin: 1rem 0;
-}
-
-.planet {
-    display: flex;
-    gap: 2.4rem;
+    margin: 2rem 0;
+   
 }
 
 
-.planet h2 {
+.planet  {
     color: #fff;
     font-family: League Spartan, sans-serif;
     font-style: normal;
@@ -127,7 +126,14 @@ header h1 {
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-top: 2px;
 
+}
+
+
+.upline-pl {
+    display: flex;
+    gap:2rem;
 }
 
 .wall {
@@ -353,7 +359,7 @@ span {
 
     }
 
-    #MSline {
+    .MSline {
         display: none;
     }
 
@@ -402,10 +408,31 @@ span {
 
     }
 
+
+    .main-info {
+        width: 75%;
+        margin-right: 10rem;;
+    
+    }
     .only-info {
         display: flex;
         flex-direction: row;
         margin-top: 10rem;
+      
+   
+    }
+
+
+    .planet-info P {
+        margin: 0;
+        text-align: left;
+    }
+
+    .planet-info {
+        align-items: flex-start;
+        width: 100%;
+        height: 20rem;
+   
     }
 
 
@@ -473,6 +500,9 @@ span {
 
     }
 
+
+  
+
     .line2 {
         display: none;
     }
@@ -480,17 +510,10 @@ span {
 
     .lineunder {
         display: block;
+        width: 100%;
     }
-
-    .planet-info P {
-        margin: 0;
-        text-align: left;
-    }
-
-    .planet-info {
-        align-items: flex-start;
-        width: 43.4rem;
-        height: 20rem;
+    .line1 {
+        width: 100%;
     }
 
 
@@ -502,7 +525,7 @@ span {
         height: 95.9px;
         justify-content: center;
         gap: 22px;
-        padding-left: 0;
+        padding-left: 5rem;;
 
 
     }
@@ -536,7 +559,7 @@ span {
 @media all and (min-width:1439px) {
     header {
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         height: 93px;
         align-items: normal;
         margin: 0 4.1rem 0 3.1rem;
@@ -544,9 +567,16 @@ span {
 
     header h1 {
 
-        margin-left: 2.4rem;
+        /* margin-left: 2.4rem; */
         margin-top: 3.2rem;
     }
+
+
+
+.topMobile {
+    display: flex;
+    justify-content: flex-start;
+}
 
     .upline {
         background-color: rgb(65, 158, 187);
@@ -563,9 +593,13 @@ span {
 
     .planets-list {
         margin-bottom: 20px;
-        align-items: flex-end;
+    
+
+    }
 
 
+    #planet-btn {
+        width: 51.2rem;
     }
 
 
@@ -574,7 +608,7 @@ span {
         justify-content: space-between;
         align-items: flex-start;
         margin-left: 15rem;
-        margin-right: 15rem;
+        margin-right: 5rem;
 
     }
 
@@ -602,7 +636,7 @@ span {
         align-items: space-between;
         justify-content: flex-start;
         height: 580px;
-        margin-left: 30rem;
+        margin-left: 20rem;
 
 
     }
