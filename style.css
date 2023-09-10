@@ -294,6 +294,13 @@ span {
 
 .planet-info a {
     text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.9;
+    font-family: League Spartan;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .infos-num {

@@ -14,6 +14,7 @@ const burgerBtn = document.querySelector('#burger-btn');
 const planetBtn = document.querySelector('#planet-btn');
 
 
+
 const PLANET_API = 'https://planets-api.vercel.app/api/v1/planets';
    
 for (let i = 0; i <  planetLinks.length; i++) {
@@ -35,6 +36,8 @@ const selectPlanet = async (planet = 'Mercury') => {
     revolutionN.textContent = data.revolution;
     radiusN.textContent = data.radius;
     temperatureN.textContent = data.temperature;
+
+
 
    
 
