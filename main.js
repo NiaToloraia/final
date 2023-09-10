@@ -12,10 +12,15 @@ const radiusN = document.querySelector('#radius');
 const temperatureN = document.querySelector('#temperature');
 const burgerBtn = document.querySelector('#burger-btn');
 const planetBtn = document.querySelector('#planet-btn');
-// const circleColor = document.querySelector('.circle');
-const planetLine = document.querySelectorAll('.upline');
-const underLines = document.querySelectorAll('.underline');
 
+
+
+
+
+burgerBtn.addEventListener('click', () => {
+    planetBtn.classList.toggle('active');
+    burgerBtn.classList.toggle('active');
+});
 
 
 const PLANET_API = 'https://planets-api.vercel.app/api/v1/planets';
@@ -35,10 +40,6 @@ for (let i = 0; i <  planetLinks.length; i++) {
 
 
 
-
-
-
-
 const selectPlanet = async (planet = 'Mercury') => {
     const response = await fetch(`${PLANET_API}/${planet}`);
     const data = await response.json();
@@ -51,11 +52,6 @@ const selectPlanet = async (planet = 'Mercury') => {
     radiusN.textContent = data.radius;
     temperatureN .textContent = data.temperature;
    
-
- 
-
-
-
 
     overviewFirst.addEventListener('click', () => {
         infoP.textContent = data.overview.content;
@@ -80,72 +76,3 @@ const selectPlanet = async (planet = 'Mercury') => {
 };
 
 selectPlanet();
-
-
-burgerBtn.addEventListener('click', () => {
-    planetBtn.classList.toggle('active');
-    burgerBtn.classList.toggle('active');
-
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // const burgerBtn = document.querySelector('.burger-menu');
-// // const navMain = document.querySelector('#planet-menu');
-
-// // burgerBtn.addEventListener('click', () => { 
-// //     navMain.classList.toggle('active');  
-// //      if(navMain.classList.contains('active')) {
-// //         burgerBtn.innerStyle = 'open';
-// //     } else {
-// //         burgerBtn.innerText = 'close';
-// //     }  
-
-
-// // });
-
-
-
-// const choosePln = documnet.querySelector('#planet');
-// const imgContainer = document.querySelector('#planet-img');
-// const planetTitle = document.querySelector('#title');
-// const titleP = document.querySelector('info-p')
-
-// const PLANETS_API = 'https://planets-api.vercel.app/V enus'
-
-
-// choosePlnaddEventListener('click', () => { 
-//     fetchInfoPlanets(choosePln.value)
-// });
-
-// const fetchInfoPlanets = async (name='Mercury') => {				
-//     const response = await fetch('${PLANETS_API}/${name}');
-//     const data = await response.json()
-
-
-//     imgContainer.innerHTML = `
-//     <img src="${data.images}" alt="${data.name}" />
-//     <h2>${data.name}</h2>`;
-//     console.log(data);
-   
-//    };
-
-
-//    fetchInfoPlanets();

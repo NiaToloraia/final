@@ -46,10 +46,12 @@ body {
     background-color: #070724;
 }
 
+
+
+/*header */
 header {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     margin: 0 2rem;
     height: 68px;
@@ -136,6 +138,8 @@ header h1 {
     gap:2rem;
 }
 
+
+/* main */
 .wall {
     display: flex;
     flex-direction: column;
@@ -172,7 +176,7 @@ header h1 {
 
 .allover h1 {
     font-family: League Spartan;
-    /* font-weight: 700; */
+    font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
     text-align: center;
@@ -317,7 +321,7 @@ span {
 
 
 
-
+/* tablets and up */
 @media all and (min-width:767px) {
     header {
         flex-direction: column;
@@ -330,7 +334,6 @@ span {
     header {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
         align-items: center;
         margin: 0 2rem;
 
@@ -404,8 +407,6 @@ span {
         letter-spacing: 1px;
         text-transform: uppercase;
         font-family: League Spartan, sans-serif;
-
-
     }
 
 
@@ -500,9 +501,6 @@ span {
 
     }
 
-
-  
-
     .line2 {
         display: none;
     }
@@ -556,18 +554,17 @@ span {
 }
 
 
+
+/* laptops big monitors and up */
 @media all and (min-width:1439px) {
     header {
         flex-direction: row;
-        /* justify-content: space-between; */
         height: 93px;
         align-items: normal;
         margin: 0 4.1rem 0 3.1rem;
     }
 
     header h1 {
-
-        /* margin-left: 2.4rem; */
         margin-top: 3.2rem;
     }
 
