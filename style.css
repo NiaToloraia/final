@@ -159,6 +159,7 @@ header h1 {
     height: 4px;
     margin-top: 17px;
     background-color: #419EBB;
+    /* display: none; */
 }
 
 
@@ -169,7 +170,7 @@ header h1 {
     position: absolute;
     top: 0;
     flex-wrap: wrap;
-    margin-top: 2.4rem;
+    margin-top: 2.4rem ;
 }
 
 
@@ -182,6 +183,7 @@ header h1 {
     text-align: center;
     color: #fff;
     opacity: .5;
+    margin-bottom: 2.4rem;
 }
 
 
